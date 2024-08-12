@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suitmedia</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--navbar-->
+    <header id="navbar" class="navbar">
+      <div class="logo">
+        <img src="img/suitmedia.webp" alt="logo">
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#ideas" class="nav-link active">Ideas</a></li>
+          <li><a href="#careers" class="nav-link">Careers</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>    
+        </ul>
+      </nav>
+    </header>
+
+    <!--Banner-->
+    <div class="banner" id="banner">
+        <div class="banner-layer">
+            <h1>Ideas</h1>
+            <p>Where all our great things begin</p>
+        </div>
+    </div>
+
+    <!--content-->
+    <div class="content-container">
+      <div class="content-navigation">
+        <div id="page-info">Showing 1-10 of 100</div>
+        <div class="page-setting">
+            <label for="itemsPerPage">Show Per Page:</label>
+            <select id="itemsPerPage" class="dropdown showPerPage">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+            </select>
+            <label for="sort">Sort By:</label>
+            <select id="sort" class="dropdown sortBy">
+                <option value="-published_at">Newest</option>
+                <option value="published_at">Oldest</option>
+            </select>
+        </div>
+      </div>
+      <div id="posts" class="posts-grid">
+        <!-- Cards will be populated here -->
+      </div>
+      <!-- pagination -->
+      <div class="pagination">
+        <button id="prevPage" class="page-btn">«</button>
+          <span id="currentPage"></span>
+        <button id="nextPage" class="page-btn">»</button>
+      </div>
+    </div>
+  <!--script-->  
+  <script src="js/animation.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
